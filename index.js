@@ -44,7 +44,7 @@ app.get('/api', async (req, res) => {
         res.write(`data: [DONE]\n\n`);
         res.end();
         console.log('done')
-    } catch (err) {
+    } catch (err) { 
         console.error(err);
         res.status(500).json({ error: 'An error occurred', details: err.message });
     }
